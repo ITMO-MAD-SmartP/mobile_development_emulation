@@ -1,0 +1,23 @@
+simulation:
+  send-post-request-every-n-milliseconds: 1000
+  send-get-request-every-n-milliseconds: 800
+  amount-of-active-users: 10000
+  requests-per-day-per-user: 20
+
+
+api.url: http://localhost:5050
+
+
+logging:
+  level:
+    root: OFF
+    org.springframework: OFF
+    ru.itmo.mobile_development: INFO
+
+server:
+  port: 5111
+
+
+spring:
+  main:
+    banner-mode: "off"

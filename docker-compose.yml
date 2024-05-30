@@ -1,0 +1,9 @@
+services:
+  10k-mobile-simulation:
+    image: openjdk:17-oracle
+    container_name:   10k-mobile-simulation
+    volumes:
+      - ./10_k_mobile_simulation.jar:/home/10_k_mobile_simulation.jar
+    command: [ "java", "-jar", "/home/10_k_mobile_simulation.jar" ]
+    ports:
+      - "5050:5050"
